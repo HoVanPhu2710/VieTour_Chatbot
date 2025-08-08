@@ -1,0 +1,76 @@
+version: "2.0"
+stories:
+  - story: Hỏi tour và trả về kết quả động
+    steps:
+      - intent: ask_tour
+      - action: action_get_tour_by_slug_or_top
+
+  - story: Hỏi giá tour
+    steps:
+      - intent: ask_price
+      - action: utter_ask_price
+
+  - story: Đặt tour
+    steps:
+      - intent: book_tour
+      - action: utter_book_tour
+
+  - story: Hỏi khuyến mãi
+    steps:
+      - intent: ask_promotion
+      - action: utter_ask_promotion
+
+  - story: Tạm biệt
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Chào hỏi, hỏi giá, đặt tour
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_price
+      - action: utter_ask_price
+      - intent: book_tour
+      - action: utter_book_tour
+
+  - story: Hỏi khuyến mãi, đặt tour
+    steps:
+      - intent: ask_promotion
+      - action: utter_ask_promotion
+      - intent: book_tour
+      - action: utter_book_tour
+
+  - story: Chào hỏi, hỏi khuyến mãi, hỏi giá, tạm biệt
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_promotion
+      - action: utter_ask_promotion
+      - intent: ask_price
+      - action: utter_ask_price
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Đặt tour sau khi hỏi giá
+    steps:
+      - intent: ask_price
+      - action: utter_ask_price
+      - intent: book_tour
+      - action: utter_book_tour
+
+  - story: Đặt tour ngay sau khi chào hỏi
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: book_tour
+      - action: utter_book_tour
+
+  - story: Đặt tour, cảm ơn, tạm biệt
+    steps:
+      - intent: book_tour
+      - action: utter_book_tour
+      - intent: thanks
+      - action: utter_thanks
+      - intent: goodbye
+      - action: utter_goodbye

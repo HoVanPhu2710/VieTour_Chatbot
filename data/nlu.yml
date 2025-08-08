@@ -1,0 +1,265 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - Xin chào
+      - Chào bạn
+      - Hello
+      - Hi
+      - Chào hệ thống
+      - Chào bot
+      - Chào buổi sáng
+      - Chào buổi tối
+      - Có ai ở đó không?
+      - Cho mình hỏi chút
+      - Mình cần tư vấn
+      - Bạn ơi
+      - Alo
+      - Mình muốn hỏi về tour
+      - Có thể giúp mình không?
+      - Cho mình xin thông tin
+      - Mình muốn được hỗ trợ
+      - Bạn có thể tư vấn không?
+      - Mình muốn biết thêm về các tour
+      - Chào VieTour
+      - Chào anh/chị
+      - Chào quý công ty
+      - Chào admin
+      - Chào trợ lý ảo
+      - Chào VieTour bot
+
+  - intent: ask_tour
+    examples: |
+      - Có tour nào đi miền Tây không?
+      - Bạn gợi ý tour nổi bật đi!
+      - Bạn có thể đề xuất tour nào cho mình không?
+      - Cho mình xin top 3 tour hot nhất
+      - Có tour nào đi biển không?
+      - Bạn có tour nào đi Hà Nội không?
+      - Tôi muốn tìm tour đi Đà Nẵng
+      - Có tour nào phù hợp cho gia đình không?
+      - Bạn có thể giới thiệu tour nổi bật không?
+      - Gợi ý giúp mình tour du lịch hè này
+      - Có tour nào đi Phú Quốc không?
+      - Tour nào đang được nhiều người đặt nhất?
+      - Bạn có thể gợi ý tour phù hợp với mùa hè không?
+      - Có tour nào đi Sapa không?
+      - Tour nào có lịch trình 3 ngày 2 đêm?
+      - Bạn có tour nào xuất phát từ TP.HCM không?
+      - Tour nào đang hot hiện nay?
+      - Bạn gợi ý giúp mình tour phù hợp với mùa hè
+      - Có tour nào đi miền Trung không?
+      - Tour nào có lịch trình tham quan nhiều điểm?
+      - Có tour nào đi nước ngoài không?
+      - Tour nào phù hợp cho người lớn tuổi?
+      - Có tour nào dành cho cặp đôi không?
+      - Tour nào có hoạt động ngoài trời?
+      - Có tour nào đi dịp lễ 2/9 không?
+      - Tour nào có bao gồm vé máy bay?
+      - Có tour nào khởi hành trong tuần này không?
+      - Tour nào có hướng dẫn viên tiếng Anh?
+      - Có tour nào cho người thích khám phá không?
+      - Tour nào phù hợp cho công ty tổ chức team building?
+      - Có tour nào đi đảo không?
+      - Tour nào có dịch vụ xe đưa đón tận nơi?
+      - Có tour nào cho người thích nghỉ dưỡng không?
+      - Tour nào có lịch trình linh hoạt?
+      - Có tour nào cho người thích ẩm thực không?
+      - Tour nào có hoạt động trải nghiệm văn hóa địa phương?
+      - Có tour nào cho người thích chụp ảnh không?
+      - Tour nào có dịch vụ spa, nghỉ dưỡng cao cấp?
+      - Có tour nào phù hợp cho trẻ nhỏ không?
+      - Tour nào có chương trình khám phá thiên nhiên?
+      - Có tour nào đi vào mùa hoa nở không?
+      - Tour nào có hoạt động thể thao dưới nước?
+      - Có tour nào cho người thích leo núi không?
+      - Tour nào có lịch trình nhẹ nhàng, thư giãn?
+      - Có tour nào cho người thích lịch sử, di tích không?
+      - Tour nào có hoạt động vui chơi giải trí cho trẻ em?
+      - Có tour nào đi kết hợp công tác không?
+      - Tour nào có dịch vụ ăn uống đặc sản địa phương?
+      - Có tour nào đi dịp Tết không?
+      - Tour nào có chương trình gala dinner?
+      - Có tour nào cho người thích mua sắm không?
+      - Tour nào có dịch vụ bảo hiểm du lịch?
+      - Có tour nào đi bằng tàu hỏa không?
+      - Tour nào có dịch vụ xe limousine?
+      - Có tour nào đi kết hợp nghỉ dưỡng và khám phá không?
+      - Tour nào có chương trình dành cho người cao tuổi?
+      - Có tour nào đi kết hợp học tập, trải nghiệm không?
+      - Tour nào có dịch vụ chăm sóc sức khỏe?
+      - Có tour nào đi kết hợp tham quan và nghỉ dưỡng không?
+      - Tour nào có lịch trình phù hợp cho người bận rộn?
+      - Có tour nào đi kết hợp với sự kiện, lễ hội không?
+      - Tour nào có dịch vụ đưa đón sân bay?
+      - Có tour nào đi kết hợp với hoạt động thiện nguyện không?
+      - Tour nào có chương trình dành cho học sinh, sinh viên?
+      - Có tour nào đi kết hợp với hoạt động thể thao không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng 24/7?
+      - Có tour nào đi kết hợp với hoạt động nghệ thuật không?
+      - Tour nào có dịch vụ đặt phòng khách sạn cao cấp?
+      - Có tour nào đi kết hợp với hoạt động khám phá hang động không?
+      - Tour nào có dịch vụ hướng dẫn viên riêng?
+      - Có tour nào đi kết hợp với hoạt động cắm trại không?
+      - Tour nào có dịch vụ xe đưa đón tận nơi?
+      - Có tour nào đi kết hợp với hoạt động câu cá không?
+      - Tour nào có dịch vụ tổ chức sinh nhật, kỷ niệm?
+      - Có tour nào đi kết hợp với hoạt động yoga, thiền không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng quốc tế?
+      - Có tour nào đi kết hợp với hoạt động học ngoại ngữ không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng khuyết tật?
+      - Có tour nào đi kết hợp với hoạt động bảo vệ môi trường không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng lớn tuổi?
+      - Có tour nào đi kết hợp với hoạt động sáng tạo nghệ thuật không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng trẻ em?
+      - Có tour nào đi kết hợp với hoạt động thể thao mạo hiểm không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng doanh nghiệp?
+      - Có tour nào đi kết hợp với hoạt động khám phá thiên nhiên không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng cá nhân?
+      - Có tour nào đi kết hợp với hoạt động trải nghiệm văn hóa không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng nhóm?
+      - Có tour nào đi kết hợp với hoạt động khám phá ẩm thực không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng gia đình?
+      - Có tour nào đi kết hợp với hoạt động khám phá lịch sử không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng nước ngoài?
+      - Có tour nào đi kết hợp với hoạt động khám phá địa phương không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng cá nhân hóa?
+      - Có tour nào đi kết hợp với hoạt động khám phá vùng miền không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng đặc biệt?
+      - Có tour nào đi kết hợp với hoạt động khám phá thiên nhiên hoang dã không?
+      - Tour nào có dịch vụ hỗ trợ khách hàng yêu cầu riêng?
+      - Bạn có thể đề xuất tour nào cho mình không?
+      - Bạn gợi ý giúp mình tour phù hợp với gia đình
+      - Bạn có thể giới thiệu tour nào cho nhóm bạn không?
+      - Bạn có thể gợi ý tour nào cho người lớn tuổi không?
+      - Bạn có thể đề xuất tour nào cho dịp lễ không?
+      - Bạn có thể giới thiệu tour nào cho mùa hè không?
+      - Bạn có thể gợi ý tour nào cho người thích khám phá không?
+      - Bạn có thể đề xuất tour nào cho người thích nghỉ dưỡng không?
+      - Bạn có thể giới thiệu tour nào cho người thích ẩm thực không?
+      - Bạn có thể gợi ý tour nào cho người thích chụp ảnh không?
+      - Bạn có thể đề xuất tour nào cho người thích thể thao không?
+      - Bạn có thể giới thiệu tour nào cho người thích lịch sử không?
+      - Bạn có thể gợi ý tour nào cho người thích văn hóa không?
+      - Bạn có thể đề xuất tour nào cho người thích thiên nhiên không?
+      - Bạn có thể giới thiệu tour nào cho người thích biển không?
+      - Bạn có thể gợi ý tour nào cho người thích núi không?
+      - Bạn có thể đề xuất tour nào cho người thích trải nghiệm không?
+      - Bạn có thể giới thiệu tour nào cho người thích mua sắm không?
+      - Bạn có thể gợi ý tour nào cho người thích sự kiện không?
+      - Bạn có thể đề xuất tour nào cho người thích nghệ thuật không?
+      - Bạn có thể giới thiệu tour nào cho người thích học tập không?
+      - Bạn có thể gợi ý tour nào cho người thích thiện nguyện không?
+      - Bạn có thể đề xuất tour nào cho người thích yoga không?
+      - Bạn có thể giới thiệu tour nào cho người thích cắm trại không?
+      - Bạn có thể gợi ý tour nào cho người thích câu cá không?
+      - Bạn có thể đề xuất tour nào cho người thích bảo vệ môi trường không?
+      - Bạn có thể giới thiệu tour nào cho người thích sáng tạo không?
+      - Bạn có thể gợi ý tour nào cho người thích trải nghiệm địa phương không?
+      - Bạn có thể đề xuất tour nào cho người thích khám phá hang động không?
+      - Bạn có thể giới thiệu tour nào cho người thích khám phá vùng miền không?
+      - Bạn có thể gợi ý tour nào cho người thích khám phá thiên nhiên hoang dã không?
+      - Bạn có thể đề xuất tour nào cho người thích yêu cầu riêng không?
+
+  - intent: ask_price
+    examples: |
+      - Giá tour Đà Lạt là bao nhiêu?
+      - Tour Nha Trang giá thế nào?
+      - Cho tôi biết giá tour Phú Quốc
+      - Giá tour đi biển
+      - Tour Sapa giá bao nhiêu tiền?
+      - Giá tour cho 2 người là bao nhiêu?
+      - Tour gia đình có giá thế nào?
+      - Giá tour đã bao gồm vé máy bay chưa?
+      - Có tour nào dưới 5 triệu không?
+      - Giá tour đã bao gồm ăn uống chưa?
+      - Giá tour trọn gói là bao nhiêu?
+      - Tour nào giá rẻ nhất?
+      - Giá tour cho trẻ em thế nào?
+      - Có phụ thu gì không?
+
+  - intent: book_tour
+    examples: |
+      - Tôi muốn đặt tour Đà Lạt cho 2 người
+      - Đặt tour Nha Trang ngày 20/7
+      - Đăng ký tour Phú Quốc
+      - Đặt tour đi biển
+      - Mình muốn đặt tour Sapa cho gia đình 4 người
+      - Đặt tour đi miền Tây vào cuối tuần
+      - Đặt tour Hà Nội ngày 1/8
+      - Mình muốn đăng ký tour cho nhóm bạn 5 người
+      - Đặt tour có bao gồm khách sạn không?
+      - Đặt tour trọn gói
+      - Đặt tour cho công ty
+      - Đặt tour cho trẻ em
+      - Đặt tour đi 3 ngày 2 đêm
+      - Đặt tour xuất phát từ TP.HCM
+      - Đặt tour có hướng dẫn viên không?
+
+  - intent: ask_promotion
+    examples: |
+      - Có khuyến mãi gì không?
+      - Tour nào đang giảm giá?
+      - Có ưu đãi nào cho khách mới không?
+      - Khuyến mãi hè này là gì?
+      - Có mã giảm giá không?
+      - Tour nào đang có chương trình tặng quà?
+      - Có ưu đãi cho nhóm đông người không?
+      - Có giảm giá cho học sinh sinh viên không?
+      - Tour nào đang có ưu đãi đặc biệt?
+      - Có chương trình khuyến mãi cuối tuần không?
+      - Có ưu đãi cho khách hàng thân thiết không?
+      - Có chương trình trả góp không?
+      - Có tặng voucher không?
+
+  - intent: goodbye
+    examples: |
+      - Tạm biệt
+      - Chào tạm biệt
+      - Hẹn gặp lại
+      - Bye
+      - Chúc bạn một ngày tốt lành
+      - Cảm ơn bạn nhé
+      - Cảm ơn, mình sẽ liên hệ lại sau
+      - Mình thoát đây
+      - Hẹn gặp lại bạn lần sau
+      - Chúc bạn cuối tuần vui vẻ
+
+  - intent: thanks
+    examples: |
+      - Cảm ơn bạn
+      - Cảm ơn nhiều nhé
+      - Cảm ơn, bạn rất nhiệt tình
+      - Cảm ơn đã tư vấn
+      - Cảm ơn bạn đã giúp mình
+      - Mình cảm ơn bạn
+      - Thanks
+      - Thank you
+      - Cảm ơn vì thông tin hữu ích
+      - Cảm ơn, mình sẽ liên hệ lại sau
+      - Cảm ơn, mình sẽ suy nghĩ thêm
+      - Cảm ơn, mình sẽ xem xét
+      - Cảm ơn, mình sẽ báo lại sau
+
+  - intent: smalltalk
+    examples: |
+      - Bạn khỏe không?
+      - Hôm nay bạn thế nào?
+      - Thời tiết hôm nay đẹp quá nhỉ?
+      - Bạn có mệt không?
+      - Bạn có vui không?
+      - Bạn có thích du lịch không?
+      - Bạn có thể kể chuyện vui không?
+      - Bạn có thể giới thiệu về mình không?
+      - Bạn làm việc ở đây lâu chưa?
+      - Bạn có thể giúp gì cho mình?
+      - Bạn có thể tư vấn gì cho mình?
+      - Bạn có thể nói chuyện với mình không?
+      - Bạn có thể chia sẻ kinh nghiệm du lịch không?
+      - Bạn có thể gợi ý địa điểm du lịch thú vị không?
+      - Bạn có thể kể về tour nổi bật không?
+      - Bạn có thể giới thiệu về VieTour không?
+      - Bạn có thể giúp mình chọn tour phù hợp không?
+      - Bạn có thể kể về khách hàng hài lòng không?
+      - Bạn có thể chia sẻ bí quyết du lịch tiết kiệm không?
+      - Bạn có thể kể về trải nghiệm du lịch không?

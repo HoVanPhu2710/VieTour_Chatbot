@@ -1,0 +1,61 @@
+version: "2.0"
+intents:
+  - greet
+  - ask_tour
+  - ask_price
+  - book_tour
+  - ask_promotion
+  - goodbye
+  - thanks
+  - smalltalk
+
+responses:
+  utter_greet:
+    - text: "Xin chào! Tôi có thể giúp gì cho bạn về tour du lịch?"
+    - text: "Chào bạn! Bạn muốn tìm hiểu tour nào ạ?"
+    - text: "Chào mừng bạn đến với VieTour! Tôi có thể hỗ trợ gì cho bạn?"
+    - text: "Chào bạn, VieTour luôn sẵn sàng tư vấn cho bạn các tour hấp dẫn!"
+  utter_ask_tour:
+    - text: "Bạn muốn tìm tour ở đâu và thời gian nào ạ?"
+    - text: "Bạn có thể cho mình biết địa điểm hoặc loại tour bạn quan tâm không?"
+    - text: "Bạn muốn đi du lịch cùng ai và vào dịp nào để mình tư vấn phù hợp nhé!"
+    - text: "Bạn thích du lịch biển, núi hay khám phá văn hóa địa phương?"
+  utter_ask_price:
+    - text: "Bạn muốn hỏi giá tour nào ạ?"
+    - text: "Bạn quan tâm đến tour nào để mình báo giá chi tiết nhé!"
+    - text: "Bạn cần báo giá cho tour cụ thể nào không?"
+    - text: "Bạn muốn biết giá tour cho mấy người và thời gian nào ạ?"
+  utter_book_tour:
+    - text: "Bạn vui lòng cung cấp thông tin tour, số người và ngày đi nhé!"
+    - text: "Bạn muốn đặt tour nào, cho bao nhiêu người và ngày khởi hành?"
+    - text: "Để đặt tour, bạn cho mình biết tên tour, số lượng người và thời gian đi nhé!"
+    - text: "Bạn cần hỗ trợ đặt tour nào? Mình sẽ giúp bạn hoàn tất thủ tục."
+  utter_ask_promotion:
+    - text: "Hiện tại có nhiều khuyến mãi hấp dẫn, bạn muốn biết về tour nào?"
+    - text: "Bạn quan tâm đến chương trình ưu đãi nào?"
+    - text: "VieTour đang có nhiều ưu đãi, bạn muốn tìm hiểu tour nào?"
+    - text: "Bạn muốn biết về khuyến mãi cho tour nào hoặc thời gian nào không?"
+  utter_goodbye:
+    - text: "Cảm ơn bạn đã liên hệ. Chúc bạn một ngày tốt lành!"
+    - text: "Tạm biệt và hẹn gặp lại bạn ở VieTour!"
+    - text: "Chúc bạn có chuyến du lịch vui vẻ!"
+    - text: "Cảm ơn bạn, mong sớm được phục vụ bạn!"
+  utter_thanks:
+    - text: "Cảm ơn bạn đã tin tưởng VieTour!"
+    - text: "Rất vui được hỗ trợ bạn!"
+    - text: "Nếu cần thêm thông tin, bạn cứ hỏi nhé!"
+    - text: "Cảm ơn bạn, chúc bạn một ngày tuyệt vời!"
+  utter_smalltalk:
+    - text: "Cảm ơn bạn đã hỏi thăm! Tôi là trợ lý ảo của VieTour, luôn sẵn sàng hỗ trợ bạn."
+    - text: "Tôi rất vui khi được trò chuyện cùng bạn!"
+    - text: "VieTour luôn mong muốn mang lại trải nghiệm tốt nhất cho khách hàng."
+    - text: "Bạn cần tư vấn gì về du lịch không?"
+  utter_iamabot:
+    - text: "Tôi là trợ lý ảo của hệ thống đặt tour du lịch VieTour."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_get_tour_by_slug_or_top
