@@ -133,5 +133,5 @@ Thumbs.db
 *.sqlite3
 
 # API keys and sensitive data
-credentials.yml
-endpoints.yml
+#credentials.yml
+#endpoints.yml
